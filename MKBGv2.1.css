@@ -1,0 +1,465 @@
+﻿/*
+    Основни елементи:
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: left;
+    font-family: sans-serif;
+    color: #000;
+    background: #bfbfbf;
+    word-wrap: break-word;
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+img {
+    border: none;
+}
+
+p {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+p:first-letter {
+    margin-left: 50px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2e4c84;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    font-size: 17px;
+}
+
+.field, textarea, input[type="text"], input[type="password"], input[type="email"] {
+    display: block;
+    margin: 5px auto;
+    padding: 5px 0.5%;
+    width: 98.75%;
+    height: auto;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.button, select, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    display: block;
+    margin: 5px auto;
+    padding: 2.5px 0.5%;
+    width: 100%;
+    height: auto;
+    font-family: cursive;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+textarea {
+    height: 50px;
+    resize: none;
+}
+
+textarea:focus {
+    overflow-y: auto;
+}
+
+input[type="file"] {
+    display: block;
+    border-radius: 2.5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 17.5px;
+    height: 17.5px;
+    position: relative;
+    top: 4px;
+    /* left: 20px; */
+}
+
+select {
+    font-family: sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*
+    Дизайн за компютър:
+*/
+
+.header, .container, .footer, .header li, .header li a, .header input {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.header, .container, .footer {
+    padding: 1%;
+    width: 98%;
+}
+
+.header {
+    /* position: fixed; JavaScript */
+    padding: 0px;
+    width: 100%;
+    background: #4267b2;
+}
+
+.header li {
+    margin: 2px 0px;
+    margin-right: 5px;
+    padding: 4.5px 0.5%;
+    width: auto;
+    height: auto;
+    float: left;
+    border-radius: 2.5px;
+}
+
+.header li:last-child {
+    margin-right: 0px;
+}
+
+.header li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header li a:hover {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.header input[type="text"], .header input[type="submit"] {
+    font-family: sans-serif;
+    border: 2px solid #4267b2;
+    border-radius: 25px;
+}
+
+.header input[name="search"], .header input[type="text"] {
+    float: left;
+    padding: 1px 1%;
+    width: 84%;
+    height: 25px;
+    
+}
+
+.header input[type="submit"] {
+    float: right;
+    width: 12%;
+    height: 31.5px;
+}
+
+
+
+.container {
+    width: 90%; /* 98 - x */
+    border-radius: 5px;
+}
+
+.footer {
+    font-family: cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+.row, .column, .column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column10 {
+    display: block;
+    margin: 2.5px auto;
+    padding: 0% 1%;
+    width: auto;
+    height: auto;
+    float: left;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.row, .column, .column10 {
+    width: 98%;
+    clear: both;
+}
+
+.column1 {
+    width: 8%;
+}
+
+.column2 {
+    width: 18%;
+}
+
+.column3 {
+    width: 28%;
+}
+
+.column4 {
+    width: 38%;
+}
+
+.column5 {
+    width: 48%;
+}
+
+.column6 {
+    width: 58%;
+}
+
+.column7 {
+    width: 68%;
+}
+
+.column8 {
+    width: 78%;
+}
+
+.column9 {
+    width: 88%;
+}
+
+.chatbox {
+    margin: 5px auto;
+    padding: 1%;
+    width: 98%;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+    text-align: justify;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.chatbox .msg {
+    margin-bottom: 5px;
+}
+
+.chatbox .msg:last-child {
+    margin-bottom: 0px;
+}
+
+.chatbox i {
+    color: #00aa00;
+}
+
+.left {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+.right {
+    display: block;
+    float: right;
+    text-align: left;
+}
+
+.select {
+    display: inline-block;
+    width: auto;
+}
+
+.phone {
+    display: none !important;
+}
+
+.tablet {
+    display: none !important;
+}
+
+.computer {
+    display: block !important;
+}
+
+/*
+    Дизайн за таблет:
+*/
+
+@media only screen and (max-width: 992px) {
+    .row, .column, .column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column10 {
+        float: none;
+        margin: 5px auto;
+        padding: 0px 2%;
+        width: 96%;
+        border-radius: 2.5px;
+    }
+    
+    .header li {
+        float: none;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        padding: 1%;
+        width: 98%;
+        background: #2e4c84;
+        border-radius: 25px;
+    }
+    
+    .header li:last-child {
+        margin: 0px auto;
+    }
+    
+    ul .active, .header li:hover {
+        background: none;
+    }
+    
+    .header input[name="search"], .header input[type="text"], .header input[type="submit"] {
+        float: none;
+        margin: 0px auto;
+        text-align: center;
+        border: 1px double #000;
+        border-radius: 25px;
+    }
+    
+    .header input[name="search"] {
+        margin-bottom: 5px;
+        width: 97.5%;
+    }
+    
+    .header input[type="submit"] {
+        padding-bottom: 0px;
+        padding: 2.5px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .header {
+        width: 100%;
+        border-radius: 0px;
+    }
+    
+    .header .column7 {
+        margin: 0px auto;
+        margin-bottom: 5px;
+    }
+    
+    .header .column3 {
+        margin: 0px auto;
+    }
+    
+    .header .container, .footer {
+        padding: 0px;
+    }
+    
+    .container {
+        margin: 0px auto;
+        width: 98%;
+    }
+    
+    .footer {
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    p:first-letter {
+        margin-left: 0;
+    }
+    
+    .tablet {
+        display: block !important;
+    }
+    
+    .computer {
+        display: none !important;
+    }
+    
+    body {
+        text-align: center;
+    }
+    
+    input[type="file"] {
+        margin: auto;
+    }
+    
+    .field, textarea, input[type="text"], input[type="password"], input[type="email"] {
+        width: 98.6%;
+    }
+    
+    .chatbox {
+        height: 300px;
+    }
+}
+
+/*
+    Дизайн за телефон:
+*/
+
+@media only screen and (max-width: 768px) {
+    .phone {
+        display: block !important;
+    }
+    
+    .field, textarea, input[type="text"], input[type="password"], input[type="email"] {
+        width: 98.4138%;
+    }
+}
+
+/*
+    Скролер
+*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/*
+    Други
+*/
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+.clear::after, .header::after, .container::after, .footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix {
+    clear: both;
+    overflow: auto;
+}
